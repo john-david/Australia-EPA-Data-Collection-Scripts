@@ -87,7 +87,4 @@ Notes
 	•	Parameter Fetching: The API’s parameters endpoint does not accept since as a query parameter. It returns recent hourly/daily readings (e.g., last 48 hrs) embedded in the response.
 	•	Data Persistence: For long-term data analysis, persist the developer-accessible live data and augment with EPA’s published historic datasets as needed.
 
-⸻
-
-Let me know if you’d like help integrating these scripts into a scheduled pipeline or extending them with filtering and visualizations!
 
