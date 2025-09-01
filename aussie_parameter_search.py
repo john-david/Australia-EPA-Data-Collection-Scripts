@@ -72,10 +72,9 @@ def sites_to_df(records: List[Dict[str, Any]]) -> pd.DataFrame:
 # ---------------------------
 # 2) Fetch parameters per site with 5 rps limit + 429 backoff
 # ---------------------------
-# --- replace your current fetch_site_parameters with this version ---
 
 CHECKPOINTS = [
-    "2000-01-01T00:00:00Z",  # your original request
+    "2000-01-01T00:00:00Z",
     "2010-01-01T00:00:00Z",
     "2015-01-01T00:00:00Z",
     "2020-01-01T00:00:00Z",
@@ -172,8 +171,8 @@ async def main():
     # after gathering payloads
     bad = [p for p in payloads if p.get("_error")]
     if bad:
-    	print("\nSites that rejected very old 'since':")
-    	for b in bad[:10]:
+        print("\nSites that rejected very old 'since':")
+        for b in bad[:10]:
             print(f"- {b['siteID']} :: {b.get('_error')[:160]}...")
 
     params_df = parameters_to_df(payloads)
