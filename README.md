@@ -1,7 +1,7 @@
 
 Australia EPA Data Collection Scripts
 
-These two scripts interact with the EPA Victoria Environment Monitoring API to:
+These two scripts interact with the [EPA Victoria Environment Monitoring API](https://www.developer.vic.gov.au/index.php?option=com_apiportal&view=apitester&usage=api&apitab=tests&apiName=Environment+Monitoring+API&apiId=abadeb94-477c-479f-996d-47b3d8dc1c37&managerId=1&type=rest&apiVersion=1.0.0&Itemid=153&swaggerVersion=2.0) to:
 	1.	Retrieve a list of air-quality monitoring sites.
 	2.	Fetch time-series parameter data for each site, with built-in rate limiting, retries, and formatting into pandas DataFrames/CSV.
 
